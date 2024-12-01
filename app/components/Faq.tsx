@@ -34,10 +34,10 @@ export function Faq() {
       <div className="flex flex-col w-full gap-8 py-12 lg:flex-row">
         <div className="lg:w-1/3 lg:p-14">
           <h3 className="text-red-600 text-lg font-semibold lg:text-2xl">
-            Freqeuntly Asked Questions
+            Frequently Asked Questions
           </h3>
           <h1 className="text-3xl lg:text-4xl py-4 font-semibold">
-            Lets clarify some of your questions
+            Let&apos;s clarify some of your questions
           </h1>
           <p className="text-black/80 text-lg">
             Lorem ipsum, dolor sit amet, consectetur adipisicing elit, seddo
@@ -58,7 +58,10 @@ export function Faq() {
                   value={`item-${i + 1}`}
                   className="bg-purple-100 px-8 py-4 rounded"
                 >
-                  <AccordionTrigger>
+                  <AccordionTrigger
+                    aria-expanded="false" // Added for accessibility
+                    aria-controls={`item-${i + 1}`} // Added for accessibility
+                  >
                     <h2 className="text-lg font-medium text-purple-800">
                       {item.questions}
                     </h2>

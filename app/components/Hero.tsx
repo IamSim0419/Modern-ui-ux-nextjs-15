@@ -9,16 +9,16 @@ import Cnn from "@/public/assets/CNN.svg";
 import Cluth from "@/public/assets/Clutch.svg";
 
 const companiesImage = [
-  { name: Google },
-  { name: Slack },
-  { name: Trustpilot },
-  { name: Cnn },
-  { name: Cluth },
+  { name: Google, alt: "Google Logo" },
+  { name: Slack, alt: "Slack Logo" },
+  { name: Trustpilot, alt: "Trustpilot Logo" },
+  { name: Cnn, alt: "CNN Logo" },
+  { name: Cluth, alt: "Clutch Logo" },
 ];
 
 export function Hero() {
   return (
-    <section id="hero">
+    <section id="hero" className="relative">
       <div className="px-[20px] max-w-5xl mx-auto pt-20">
         <h1 className="text-center text-4xl md:text-5xl lg:text-6xl leading-10 font-bold">
           Unlock professional website monitoring today
@@ -31,10 +31,10 @@ export function Hero() {
         </p>
 
         <div className="flex w-full gap-x-4 pt-8 justify-center">
-          <button className="bg-purple-700 text-white hover:bg-opacity-90 w-1/2 lg:w-1/4 px-4 py-6 rounded-lg">
+          <button className="bg-purple-700 text-white hover:bg-opacity-90 w-1/2 lg:w-1/4 px-4 py-6 rounded-lg focus:ring-4 focus:ring-purple-300">
             Try for free
           </button>
-          <button className="flex items-center justify-center gap-4 text-purple-700 w-1/2 lg:w-1/4 px-4 py-6 rounded-lg border hover:bg-purple-100">
+          <button className="flex items-center justify-center gap-4 text-purple-700 w-1/2 lg:w-1/4 px-4 py-6 rounded-lg border hover:bg-purple-100 focus:ring-4 focus:ring-purple-300">
             View Pricing
             <span>
               <Image src={ArrowIcon} alt="Learn more" />
@@ -47,7 +47,7 @@ export function Hero() {
         {/* Background Image */}
         <Image
           src={Gradient}
-          alt="Gradient"
+          alt="Gradient background"
           className="min-h-[550px] md:h-[780px] lg:h-[990px] w-full"
         />
 
@@ -55,7 +55,7 @@ export function Hero() {
           {/* Hero Image */}
           <Image
             src={HeroImage}
-            alt="Hero image"
+            alt="Hero image showing website monitoring"
             className="-ml-12 lg:-ml-32 h-[380px] md:h-[610px] lg:h-[890px]"
           />
 
@@ -68,9 +68,9 @@ export function Hero() {
               {companiesImage.map((item, i) => (
                 <Image
                   src={item.name}
+                  alt={item.alt}
                   key={i}
-                  alt="Company image"
-                  className="w-[78px] lg:w-auto"
+                  className="w-[78px] lg:w-auto transition-transform transform hover:scale-110"
                 />
               ))}
             </div>

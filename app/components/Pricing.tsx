@@ -5,9 +5,13 @@ export function Pricing() {
     <section
       id="pricing"
       className="px-[20px] lg:container lg:px-20 mx-auto scroll-m-12"
+      aria-labelledby="pricing-section"
     >
       <div className="my-16">
-        <h1 className=" text-center font-semibold text-3xl lg:text-4xl">
+        <h1
+          id="pricing-section"
+          className="text-center font-semibold text-3xl lg:text-4xl"
+        >
           Flexible plans for you
         </h1>
         <p className="pt-[16px] pb-[40px] text-center text-black/80 text-lg">
@@ -15,9 +19,17 @@ export function Pricing() {
         </p>
 
         <div className="flex flex-col gap-y-6 gap-x-4 lg:flex-row">
-          <div className="w-full rounded-lg bg-slate-100 p-6 flex flex-col lg:justify-between">
+          {/* Free Trial Plan */}
+          <div
+            className="w-full rounded-lg bg-slate-100 p-6 flex flex-col lg:justify-between"
+            role="region"
+            aria-labelledby="free-trial"
+          >
             <div>
-              <h3 className="font-semibold text-[#4328EB] text-lg lg:text-xl">
+              <h3
+                id="free-trial"
+                className="font-semibold text-[#4328EB] text-lg lg:text-xl"
+              >
                 Free Trial
               </h3>
               <p className="pt-4 text-black/80 text-lg">
@@ -49,14 +61,25 @@ export function Pricing() {
                 </li>
               </ul>
             </div>
-            <button className="mt-4 rounded-md bg-white py-[14px] text-[#4328EB] font-semibold hover:bg-opacity-50">
+            <button
+              className="mt-4 rounded-md bg-white py-[14px] text-[#4328EB] font-semibold hover:bg-opacity-50 focus:outline-none focus:ring-2 focus:ring-purple-600"
+              aria-label="Start free trial"
+            >
               Start Trial
             </button>
           </div>
 
-          <div className="w-full rounded-lg bg-[#4328EB] p-6 flex flex-col lg:justify-between">
+          {/* Business Plan */}
+          <div
+            className="w-full rounded-lg bg-[#4328EB] p-6 flex flex-col lg:justify-between"
+            role="region"
+            aria-labelledby="business-plan"
+          >
             <div>
-              <h3 className="font-semibold text-white text-lg lg:text-xl">
+              <h3
+                id="business-plan"
+                className="font-semibold text-white text-lg lg:text-xl"
+              >
                 Business
               </h3>
               <p className="pt-4 text-[#F4F8FA] text-lg">
@@ -100,14 +123,25 @@ export function Pricing() {
                 </li>
               </ul>
             </div>
-            <button className="mt-6 rounded-md bg-white py-4 text-[#4328EB] font-semibold hover:bg-opacity-90">
+            <button
+              className="mt-6 rounded-md bg-white py-4 text-[#4328EB] font-semibold hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-purple-600"
+              aria-label="Get started with Business plan"
+            >
               Get Started
             </button>
           </div>
 
-          <div className="w-full rounded-lg bg-slate-100 p-6 flex flex-col lg:justify-between">
+          {/* Enterprise Plan */}
+          <div
+            className="w-full rounded-lg bg-slate-100 p-6 flex flex-col lg:justify-between"
+            role="region"
+            aria-labelledby="enterprise-plan"
+          >
             <div>
-              <h3 className="font-medium text-[#4328EB] text-lg lg:text-xl">
+              <h3
+                id="enterprise-plan"
+                className="font-medium text-[#4328EB] text-lg lg:text-xl"
+              >
                 Enterprise
               </h3>
               <p className="pt-4 text-black/80 text-lg">
@@ -128,7 +162,10 @@ export function Pricing() {
                 elit.
               </p>
             </div>
-            <button className="mt-6 rounded-md bg-white py-4 text-[#4328EB] font-semibold hover:bg-opacity-50">
+            <button
+              className="mt-6 rounded-md bg-white py-4 text-[#4328EB] font-semibold hover:bg-opacity-50 focus:outline-none focus:ring-2 focus:ring-purple-600"
+              aria-label="Contact us for Enterprise plan"
+            >
               Contact Us
             </button>
           </div>
