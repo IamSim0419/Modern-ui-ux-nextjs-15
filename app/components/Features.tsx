@@ -34,13 +34,10 @@ export function Features() {
               className="pt-6 lg:hidden lg:w-1/2"
             />
 
-            <p
-              className="py-6 text-black/80 lg:text-lg
-                        "
-            >
+            <p className="py-6 text-black/80 lg:text-lg">
               Stay on top of things and revamp your work process with our
-              game-changing features. Get a birds eye view with our cusomizable
-              dashboard.
+              game-changing features. Get a birds&apos; eye view with our
+              cusomizable dashboard.
             </p>
 
             <ul className="flex flex-col gap-y-3 text-black/90 lg:text-lg">
@@ -48,7 +45,7 @@ export function Features() {
                 <span>
                   <Image src={Check} alt="Check image" />
                 </span>
-                Lorem ippsum dolor sit amet
+                Lorem ipsum dolor sit amet
               </li>
               <li className="flex items-center gap-x-2">
                 <span>
@@ -60,14 +57,14 @@ export function Features() {
                 <span>
                   <Image src={Check} alt="Check image" />
                 </span>
-                Sed do elusmod tempor incididunt ut labore
+                Sed do eiusmod tempor incididunt ut labore
               </li>
             </ul>
 
             <h2 className="flex items-center gap-x-3 pt-6 text-purple-700 font-medium lg:text-lg">
               Learn more{" "}
               <span>
-                <Image src={PurpleArrowIcon} alt="Arrow icon"></Image>
+                <Image src={PurpleArrowIcon} alt="Arrow icon" />
               </span>
             </h2>
           </div>
@@ -88,7 +85,7 @@ export function Features() {
                 Customer Support
               </h3>
               <h1 className="text-3xl pt-3 font-semibold text-neutral-900 mx-auto lg:text-4xl lg:leading-10">
-                Get in tounch with your customers
+                Get in touch with your customers
               </h1>
             </div>
 
@@ -98,13 +95,10 @@ export function Features() {
               className="pt-6 lg:hidden lg:w-1/2"
             />
 
-            <p
-              className="py-6 text-black/80 lg:text-lg
-                        "
-            >
+            <p className="py-6 text-black/80 lg:text-lg">
               Stay on top of things and revamp your work process with our
-              game-changing features. Get a birds eye view with our cusomizable
-              dashboard.
+              game-changing features. Get a birds&apos; eye view with our
+              customizable dashboard.
             </p>
 
             <ul className="flex flex-col gap-y-3 text-black/90 lg:text-lg">
@@ -112,7 +106,7 @@ export function Features() {
                 <span>
                   <Image src={Check} alt="Check image" />
                 </span>
-                Lorem ippsum dolor sit amet
+                Lorem ipsum dolor sit amet
               </li>
               <li className="flex items-center gap-x-2">
                 <span>
@@ -124,14 +118,14 @@ export function Features() {
                 <span>
                   <Image src={Check} alt="Check image" />
                 </span>
-                Sed do elusmod tempor incididunt ut labore
+                Sed do eiusmod tempor incididunt ut labore
               </li>
             </ul>
 
             <h2 className="flex items-center gap-x-3 pt-6 text-green-600 font-medium lg:text-lg">
               Learn more{" "}
               <span>
-                <Image src={GreenArrowIcon} alt="Arrow icon"></Image>
+                <Image src={GreenArrowIcon} alt="Arrow icon" />
               </span>
             </h2>
           </div>
@@ -151,8 +145,8 @@ export function Features() {
               <h3 className="font-semibold text-pink-600 lg:text-2xl">
                 Growth Monitoring
               </h3>
-              <h1 className="text-3xl lg:text-4xl pt-3 font-semibold text-neutral-900 mx-auto  lg:leading-10">
-                Monitor your site's new subscribers
+              <h1 className="text-3xl lg:text-4xl pt-3 font-semibold text-neutral-900 mx-auto lg:leading-10">
+                Monitor your site&apos;s new subscribers
               </h1>
             </div>
 
@@ -162,13 +156,10 @@ export function Features() {
               className="pt-6 lg:hidden lg:w-1/2"
             />
 
-            <p
-              className="py-6 text-black/80 lg:text-lg
-                        "
-            >
+            <p className="py-6 text-black/80 lg:text-lg">
               Stay on top of things and revamp your work process with our
-              game-changing features. Get a birds eye view with our cusomizable
-              dashboard.
+              game-changing features. Get a birds&apos; eye view with our
+              customizable dashboard.
             </p>
 
             <div className="flex w-full gap-x-2 pt-6 lg:text-lg">
@@ -185,7 +176,7 @@ export function Features() {
             <h2 className="flex items-center gap-x-3 pt-6 text-pink-600 font-medium lg:text-lg">
               Learn more{" "}
               <span>
-                <Image src={PinkArrowIcon} alt="Arrow icon"></Image>
+                <Image src={PinkArrowIcon} alt="Arrow icon" />
               </span>
             </h2>
           </div>
