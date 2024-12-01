@@ -3,7 +3,6 @@ import Logo from "@/public/assets/Logo.svg";
 import User from "@/public/assets/User.svg";
 import Menu from "@/public/assets/Menu.svg";
 import Link from "next/link";
-import { useState } from "react";
 
 const navLinks = [
   {
@@ -25,17 +24,11 @@ const navLinks = [
 ];
 
 export function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen((prev) => !prev);
-  };
-
   return (
     <header>
       <nav className="flex w-full items-center justify-between px-[20px] py-[16px] lg:container lg:mx-auto lg:px-20">
         <div className="flex items-center gap-14">
-          <Link href="#hero" aria-label="Go to home">
+          <Link href="#hero">
             <Image src={Logo} alt="Logo" className="h-10 w-10" />
           </Link>
 
@@ -44,7 +37,7 @@ export function Navbar() {
               <Link
                 href={item.href}
                 key={i}
-                className="text-neutral-800 font-medium hover:text-purple-700 focus:text-purple-700"
+                className="text-neutral-800 font-medium"
               >
                 {item.name}
               </Link>
@@ -57,37 +50,17 @@ export function Navbar() {
             Create an account
           </span>
           <div className="flex items-center gap-4">
-            <Image src={User} alt="User profile" className="cursor-pointer" />
+            <Image src={User} alt="User profile" />
             <span className="hidden lg:block font-medium text-neutral-800">
               Sign In
             </span>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            onClick={toggleMenu}
-            className="lg:hidden"
-            aria-label="Open menu"
-          >
-            <Image src={Menu} alt="Open menu" />
-          </button>
+          <Link href="#">
+            <Image src={Menu} alt="Menu button" className="lg:hidden" />
+          </Link>
         </div>
       </nav>
-
-      {/* Mobile Menu Dropdown */}
-      {isMenuOpen && (
-        <div className="lg:hidden flex flex-col items-center gap-6 bg-white py-4 shadow-lg absolute top-full w-full z-10">
-          {navLinks.map((item, i) => (
-            <Link
-              href={item.href}
-              key={i}
-              className="text-neutral-800 font-medium"
-            >
-              {item.name}
-            </Link>
-          ))}
-        </div>
-      )}
     </header>
   );
 }
