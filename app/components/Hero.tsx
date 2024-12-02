@@ -1,6 +1,5 @@
 import ArrowIcon from "@/public/assets/blue-button.svg";
 import Image from "next/image";
-import Gradient from "@/public/assets/gradientV.svg";
 import HeroImage from "@/public/assets/Image.svg";
 import Google from "@/public/assets/Google.svg";
 import Slack from "@/public/assets/Slack.svg";
@@ -31,10 +30,10 @@ export function Hero() {
         </p>
 
         <div className="flex w-full gap-x-4 pt-8 justify-center">
-          <button className="bg-purple-700 text-white hover:bg-opacity-90 w-1/2 lg:w-1/4 px-4 py-6 rounded-lg focus:ring-4 focus:ring-purple-300">
+          <button className="bg-purple-700 text-white font-medium hover:bg-opacity-90 w-1/2 lg:w-1/4 px-4 py-6 rounded-lg focus:ring-4 focus:ring-purple-300">
             Try for free
           </button>
-          <button className="flex items-center justify-center gap-4 text-purple-700 w-1/2 lg:w-1/4 px-4 py-6 rounded-lg border hover:bg-purple-100 focus:ring-4 focus:ring-purple-300">
+          <button className="flex items-center justify-center gap-4 text-purple-700 font-medium w-1/2 lg:w-1/4 px-4 py-6 rounded-lg border-purple-700 hover:bg-purple-100 focus:ring-4 focus:ring-purple-300">
             View Pricing
             <span>
               <Image src={ArrowIcon} alt="Learn more" />
@@ -43,20 +42,13 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="relative flex h-full w-full justify-center items-center">
-        {/* Background Image */}
-        <Image
-          src={Gradient}
-          alt="Gradient background"
-          className="min-h-[550px] md:h-[780px] lg:h-[990px] w-full"
-        />
-
-        <div className="absolute w-full flex flex-col items-center">
+      <div className="flex h-full w-full justify-center items-center bg-gradient-to-t from-purple-800 via-purple-500 to-white">
+        <div className="flex w-full flex-col items-center">
           {/* Hero Image */}
           <Image
             src={HeroImage}
             alt="Hero image showing website monitoring"
-            className="-ml-12 lg:-ml-32 h-[380px] md:h-[610px] lg:h-[890px]"
+            className="-ml-12 h-[310px] mt-8 lg:-mb-24 lg:-ml-36 lg:h-auto"
           />
 
           <div className="px-[20px] lg:px-20 flex flex-col container lg:flex-row justify-between items-center lg:pb-8 gap-2">
@@ -70,7 +62,7 @@ export function Hero() {
                   src={item.name}
                   alt={item.alt}
                   key={i}
-                  className="w-[78px] lg:w-auto transition-transform transform hover:scale-110"
+                  className="w-[68px] lg:w-auto transition-transform transform hover:scale-110 pb-2"
                 />
               ))}
             </div>

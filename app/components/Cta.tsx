@@ -3,7 +3,7 @@ import { ArrowRightCircle } from "lucide-react";
 export function Cta() {
   return (
     <section className="px-[20px] lg:container lg:px-20 mx-auto">
-      <div className="w-full rounded-lg bg-gradient-to-r from-purple-500 to-purple-900 py-12 px-8 text-center my-32 lg:px-80 lg:py-22">
+      <div className="w-full rounded-lg bg-gradient-to-r from-purple-500 to-purple-900 py-12 px-8 text-center my-16 lg:px-80 lg:py-22">
         <h1 className="text-white text-4xl font-medium lg:text-5xl">
           Monitor your website like a pro
         </h1>
